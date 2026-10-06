@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Setup and troubleshooting for Codex Multi Limits on Mac and iPhone. Contact Char Dev for support.">
+  <title>Support | Codex Multi Limits by Char Dev</title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png"><link rel="stylesheet" href="assets/site.css">
+  <link rel="alternate" hreflang="en" href="support.html">
+  <link rel="alternate" hreflang="ko" href="ko/support.html">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="draft-bar">Launch preview. Public download links are being prepared.</div>
+  <header class="header wrap"><a class="brand" href="index.html" aria-label="Char Dev home"><img src="assets/app-icon.png" width="180" height="180" alt=""><span>Char Dev</span></a><nav aria-label="Main navigation"><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav></header>
+  <nav class="language-bar wrap" aria-label="Website language"><a href="support.html" lang="en" hreflang="en" aria-current="true">EN</a><span aria-hidden="true">/</span><a href="ko/support.html" lang="ko" hreflang="ko">한국어</a></nav>
+  <main id="main" class="document">
+    <h1>Support and setup</h1>
+    <p class="lead">A Mac companion is required to collect Codex log-based token statistics. The current app interface is in Korean; this guide uses English translations of its menu labels.</p>
+    <div class="notice"><strong>Contact Char Dev:</strong> <a href="mailto:jonghojo1998@gmail.com">jonghojo1998@gmail.com</a>. Public distribution is still being prepared.</div>
+    <section aria-labelledby="setup-title"><h2 id="setup-title">Connect your devices</h2>
+      <ol>
+        <li>Use macOS 14 or later on Mac, or iOS 17 or later on iPhone. The app is not optimized for iPad.</li>
+        <li>For account limits, open <strong>Settings → Account management</strong> and add an account. Authentication opens OpenAI in your system browser.</li>
+        <li>On Mac, open <strong>Settings → Token statistics settings</strong> and choose the <code>.codex</code> folder containing <code>sessions</code> and <code>archived_sessions</code>.</li>
+        <li>To view token statistics on iPhone or combine multiple Macs, turn on <strong>iCloud token-statistics sync</strong> on each device using the same Apple account.</li>
+        <li>Use <strong>Full sync</strong> to refresh. Account/settings sync and token-statistics sync are separate options.</li>
+      </ol>
+    </section>
+    <section aria-labelledby="faq-title"><h2 id="faq-title">Common questions</h2>
+      <details><summary>Why are my iPhone token totals empty?</summary><p>The iPhone cannot read your Mac's Codex files directly. Connect the log folder on Mac, enable token-statistics sync on both devices, and refresh while the Mac app is running.</p></details>
+      <details><summary>Why does the widget show an older value?</summary><p>The app requests widget updates, but Apple controls their final timing. Refresh the app and check the account query or token aggregation time. A sleeping Mac cannot upload new local records.</p></details>
+      <details><summary>Is API-equivalent cost my actual bill?</summary><p>No. It is an estimate from recorded tokens and standard model prices. Subscription pricing, taxes, tools, long-context surcharges, and speed/service-tier premiums are excluded. Unknown models appear in tokens but not cost until you assign a price.</p></details>
+      <details><summary>Why are some dates missing?</summary><p>Only available Codex log records are counted. Web-only usage, deleted source logs, and other Macs that have not synced can be missing. A blank day means no recorded data, not proof that you did not use Codex.</p></details>
+      <details><summary>Does choosing an activity account filter token totals?</summary><p>No. Token totals and the daily chart combine all Macs and accounts. The account selector on the activity screen filters only the weekly-limit activity heatmap.</p></details>
+      <details><summary>What happens when I turn off sync or remove an account?</summary><p>Turning off sync stops synchronization but does not delete existing caches or cloud records. Removing an account does not erase global token statistics or your OpenAI account. See the <a href="privacy.html#retention">retention and deletion details</a>.</p></details>
+    </section>
+    <section id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact support</h2><p>Email <a href="mailto:jonghojo1998@gmail.com">jonghojo1998@gmail.com</a> for Codex Multi Limits support from Char Dev. Include your platform, app version, the feature affected, and the last query or aggregation time.</p><p>Do not include passwords, OAuth tokens, <code>auth.json</code>, private conversations, source code, or complete session logs. Screenshots should hide account email addresses and identifiers.</p></section>
+  </main>
+  <footer class="footer wrap"><div class="footer-top"><a href="index.html">Codex Multi Limits by Char Dev</a><div class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div></div><p>Contact: <a href="mailto:jonghojo1998@gmail.com">jonghojo1998@gmail.com</a></p><p>Independent software. Not affiliated with, endorsed by, or sponsored by OpenAI.</p></footer>
+</body>
+</html>

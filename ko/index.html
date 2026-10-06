@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Codex Multi Limits는 Mac과 iPhone에서 계정별 한도, 일별 토큰 사용량, API 환산액을 확인하는 독립 앱입니다. 공개 출시를 준비하고 있습니다.">
+  <title>Codex Multi Limits | Char Dev</title>
+  <link rel="icon" type="image/png" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="alternate" hreflang="en" href="../index.html">
+  <link rel="alternate" hreflang="ko" href="index.html">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <div class="draft-bar">출시 준비 중입니다. 공개 다운로드 링크는 아직 제공되지 않습니다.</div>
+  <header class="header wrap">
+    <a class="brand" href="index.html" aria-label="Char Dev 홈"><img src="../assets/app-icon.png" width="180" height="180" alt=""><span>Char Dev</span></a>
+    <nav aria-label="주 메뉴"><a class="nav-features" href="#features">기능</a><a href="support.html">지원</a><a href="privacy.html">개인정보</a></nav>
+  </header>
+  <nav class="language-bar wrap" aria-label="웹사이트 언어"><a href="../index.html" lang="en" hreflang="en">EN</a><span aria-hidden="true">/</span><a href="index.html" lang="ko" hreflang="ko" aria-current="true">한국어</a></nav>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Codex 사용량,<br>한눈에 확인하세요.</h1>
+        <p>Mac과 iPhone에서 계정별 잔여 한도, 일별 토큰 사용량, API 환산액을 확인하세요.</p>
+        <div class="actions"><a class="button" href="#features">기능 살펴보기</a><a class="quiet-link" href="support.html">설정 안내</a></div>
+      </div>
+      <figure>
+        <div class="product-image"><img src="../assets/sample-api-chart.png" width="1440" height="860" alt="예시 데이터로 그린 최근 30일 API 환산액 그래프. 날짜별 값이 서로 연결되지 않은 파란 막대로 표시됩니다." fetchpriority="high"></div>
+        <figcaption>예시 데이터로 그린 실제 앱 화면입니다. 현재 앱은 한국어로 제공됩니다.</figcaption>
+      </figure>
+    </section>
+    <div class="compatibility wrap" aria-label="지원 기기와 현재 언어">
+      <div><strong>Mac</strong><span>macOS 14 이상</span></div>
+      <div><strong>iPhone</strong><span>iOS 17 이상</span></div>
+      <div><strong>현재 앱 언어: 한국어</strong><span>웹사이트는 한국어와 영어로 제공됩니다. iPad 최적화는 제공하지 않습니다.</span></div>
+    </div>
+    <section class="section wrap" id="features" aria-labelledby="features-title">
+      <div class="section-intro"><h2 id="features-title">얼마나 남았는지 바로 확인하세요.</h2><p>계정별 잔여 한도와 로그에서 집계한 토큰 사용량을 함께 확인하고, 각 수치가 무엇을 뜻하는지 구분해 볼 수 있습니다.</p></div>
+      <div class="features">
+        <article class="feature"><h3>여러 계정의 잔여 한도</h3><p>최대 6개 계정의 5시간 한도, 주간 한도, 리셋 시각을 확인하세요. Mac 메뉴바에서도 기준 계정의 잔여량을 볼 수 있습니다.</p></article>
+        <article class="feature"><h3>비교하기 쉬운 일별 사용량</h3><p>하나의 막대그래프에서 토큰과 API 환산액을 전환하세요. 오늘을 포함한 최근 7일 또는 30일을 선택하고 날짜별 수치를 확인할 수 있습니다.</p></article>
+        <article class="feature"><h3>위젯과 리셋 알림</h3><p>위젯에서 잔여 한도, 토큰 환산액, 활동을 확인하세요. 한도 리셋, 주간 한도 소진, 리셋권 만료 알림도 설정할 수 있습니다.</p></article>
+        <article class="feature"><h3>선택해서 쓰는 iCloud 동기화</h3><p>Apple 계정으로 앱의 계정 정보와 설정을 동기화하세요. 여러 Mac의 기록을 합치려면 토큰 통계 동기화를 별도로 켜면 됩니다.</p></article>
+      </div>
+    </section>
+    <section class="section workflow" aria-labelledby="workflow-title">
+      <div class="wrap workflow-grid">
+        <div class="workflow-copy"><h2 id="workflow-title">Mac에서 집계하고,<br>iPhone에서 확인하세요.</h2><p>토큰 통계는 Mac의 Codex 세션 로그에서 집계합니다. iCloud 토큰 동기화를 켜면 iPhone에서도 이 통계를 받을 수 있습니다.</p>
+          <ul class="steps">
+            <li><strong>Codex 로그 폴더 연결</strong><span>Mac 앱이 로컬 파일의 토큰 수와 메타데이터를 읽습니다. 원본 세션 파일은 그대로 둡니다.</span></li>
+            <li><strong>토큰 통계 동기화 켜기</strong><span>각 기기에서 같은 Apple 계정을 사용하세요. 복사된 동일 세션 기록은 중복 집계하지 않습니다.</span></li>
+            <li><strong>최근 사용량 확인</strong><span>일별 토큰은 모든 Mac과 계정의 합계입니다. 활동 히트맵은 주간 잔여 한도가 줄어든 시각을 바탕으로 따로 추정합니다.</span></li>
+          </ul>
+        </div>
+        <figure class="phone-figure"><div class="product-image"><img src="../assets/sample-token-chart.png" width="780" height="860" alt="예시 데이터로 그린 최근 30일 토큰 사용량 막대그래프. 좁은 화면에서 보이는 구성을 보여 줍니다." loading="lazy"></div><figcaption>예시 토큰 수치입니다. 앱의 그래프를 따로 렌더링한 이미지이며, iPhone 전체 화면 캡처는 아닙니다.</figcaption></figure>
+      </div>
+    </section>
+    <section class="section wrap notes" aria-label="환산 기준과 출시 안내">
+      <div><h2>환산액의 기준을 확인하세요.</h2><p>API 환산액은 기록된 토큰 수와 모델별 단가로 계산합니다. 구독료나 실제 API 청구액이 아닙니다. 단가를 알 수 없는 모델은 단가를 지정할 때까지 금액에서 제외합니다.</p><p>달러와 원화를 지원합니다. 원화는 선택한 환율을 기간 전체에 적용합니다. 누락된 로그, 웹에서만 사용한 기록, 아직 동기화하지 않은 Mac의 기록은 빠질 수 있습니다.</p><a href="privacy.html">개인정보 안내 읽기</a></div>
+      <div><h2>공개 출시를 준비하고 있습니다.</h2><p>공개 다운로드 링크와 배포 방식은 아직 안내되지 않았습니다. 현재 앱은 일반적인 외부 앱용 공개 API 계약이 없는 Codex 인증 및 사용량 조회 경로를 사용합니다.</p><p>OpenAI와 별개로 개발된 비공식 앱입니다. OpenAI가 서비스를 변경하면 연동이 달라질 수 있습니다.</p><a href="support.html">설정 안내</a></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><div class="footer-top"><span>Char Dev의 Codex Multi Limits</span><div class="footer-links"><a href="support.html">지원</a><a href="privacy.html">개인정보</a></div></div><p>문의: <a href="mailto:jonghojo1998@gmail.com">jonghojo1998@gmail.com</a></p><p>독립적으로 개발된 소프트웨어입니다. OpenAI와 제휴하지 않으며, OpenAI의 승인이나 후원을 받지 않았습니다. Codex는 OpenAI가 사용하는 명칭입니다.</p></footer>
+</body>
+</html>

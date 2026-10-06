@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Codex Multi Limits is an independent Mac and iPhone utility for account limits, daily tokens, and API-equivalent cost estimates. Public launch is being prepared.">
+  <title>Codex Multi Limits | Char Dev</title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="ko" href="ko/index.html">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="draft-bar">Launch preview. Public download links are being prepared.</div>
+  <header class="header wrap">
+    <a class="brand" href="index.html" aria-label="Char Dev home"><img src="assets/app-icon.png" width="180" height="180" alt=""><span>Char Dev</span></a>
+    <nav aria-label="Main navigation"><a class="nav-features" href="#features">Features</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+  <nav class="language-bar wrap" aria-label="Website language"><a href="index.html" lang="en" hreflang="en" aria-current="true">EN</a><span aria-hidden="true">/</span><a href="ko/index.html" lang="ko" hreflang="ko">한국어</a></nav>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Your Codex usage,<br>in one place.</h1>
+        <p>Check account limits, daily tokens, and API-equivalent costs across your Mac and iPhone.</p>
+        <div class="actions"><a class="button" href="#features">Explore features</a><a class="quiet-link" href="support.html">Setup guide</a></div>
+      </div>
+      <figure>
+        <div class="product-image"><img src="assets/sample-api-chart.png" width="1440" height="860" alt="Native daily API-equivalent cost chart with independent blue bars over 30 days, using illustrative sample data." fetchpriority="high"></div>
+        <figcaption>Native app view with illustrative sample data. The current app interface is in Korean.</figcaption>
+      </figure>
+    </section>
+    <div class="compatibility wrap" aria-label="Compatibility and current language">
+      <div><strong>Mac</strong><span>macOS 14 or later</span></div>
+      <div><strong>iPhone</strong><span>iOS 17 or later</span></div>
+      <div><strong>Current interface: Korean</strong><span>Website languages: English and Korean. iPad optimization is not offered.</span></div>
+    </div>
+    <section class="section wrap" id="features" aria-labelledby="features-title">
+      <div class="section-intro"><h2 id="features-title">Know what you have left.</h2><p>Keep account limits and measured token activity together, with separate views for what each number means.</p></div>
+      <div class="features">
+        <article class="feature"><h3>Limits across accounts</h3><p>View up to six accounts, their available 5-hour and weekly limits, and reset times. Mac menu-bar access keeps the current account nearby.</p></article>
+        <article class="feature"><h3>Daily usage you can compare</h3><p>Switch one bar chart between tokens and API-equivalent cost. Choose the last 7 or 30 calendar days and inspect individual dates.</p></article>
+        <article class="feature"><h3>Widgets and reset reminders</h3><p>Check remaining limits, token estimates, and activity in widgets. Enable reminders for resets, exhausted weekly limits, and expiring reset credits.</p></article>
+        <article class="feature"><h3>Optional iCloud sync</h3><p>Use your Apple account to sync account details and settings. Enable token-statistics sync separately to combine records from multiple Macs.</p></article>
+      </div>
+    </section>
+    <section class="section workflow" aria-labelledby="workflow-title">
+      <div class="wrap workflow-grid">
+        <div class="workflow-copy"><h2 id="workflow-title">Collected on Mac.<br>Available on iPhone.</h2><p>Token statistics come from Codex session logs on your Mac. The iPhone receives those statistics through optional iCloud sync.</p>
+          <ul class="steps">
+            <li><strong>Connect your Codex log folder</strong><span>The Mac app reads local token counters and metadata. Original session files stay in place.</span></li>
+            <li><strong>Enable token-statistics sync</strong><span>Use the same Apple account on each device. Copied session events are deduplicated instead of counted twice.</span></li>
+            <li><strong>Check your recent activity</strong><span>Daily totals cover all Macs and accounts together. The activity heatmap separately estimates when weekly limits decreased.</span></li>
+          </ul>
+        </div>
+        <figure class="phone-figure"><div class="product-image"><img src="assets/sample-token-chart.png" width="780" height="860" alt="Native 30-day token bar chart with illustrative sample data at a narrow layout width." loading="lazy"></div><figcaption>Illustrative token totals. This is a native chart render, not a full iPhone screenshot.</figcaption></figure>
+      </div>
+    </section>
+    <section class="section wrap notes" aria-label="Estimates and availability">
+      <div><h2>Estimates, with context.</h2><p>API-equivalent cost uses recorded tokens and model prices. It is not your subscription charge or an API bill. Unknown models are excluded from cost until assigned a price.</p><p>USD and KRW are supported. KRW uses the selected exchange rate across the full period. Missing logs, web-only usage, and unsynced Macs can leave gaps.</p><a href="privacy.html">Read privacy details</a></div>
+      <div><h2>Public launch is in preparation.</h2><p>Public download links and distribution details have not been published. The app currently uses Codex authentication and usage endpoints without a general third-party public API contract.</p><p>It is an independent, unofficial utility. Compatibility can change when OpenAI changes those services.</p><a href="support.html">Setup guide</a></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><div class="footer-top"><span>Codex Multi Limits by Char Dev</span><div class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div></div><p>Contact: <a href="mailto:jonghojo1998@gmail.com">jonghojo1998@gmail.com</a></p><p>Independent software. Not affiliated with, endorsed by, or sponsored by OpenAI. Codex is a name used by OpenAI.</p></footer>
+</body>
+</html>
